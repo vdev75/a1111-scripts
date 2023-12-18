@@ -31,13 +31,19 @@ CHECKPOINT_MODELS=(
     # juggernautXL_v7Rundiffusion.safetensors
     "https://civitai.com/api/download/models/240840?type=Model&format=SafeTensor&size=full&fp=fp16"
     # Epic realism pruned Natural Sin https://civitai.com/models/25694/epicrealism?modelVersionId=134065
-    "https://civitai.com/api/download/models/160989?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    #"https://civitai.com/api/download/models/160989?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     # Anything V3 anythingV3_fp16.ckpt - https://civitai.com/models/66/anything-v3
-    "https://civitai.com/api/download/models/75?type=Model&format=PickleTensor&size=full&fp=fp16"
+    #"https://civitai.com/api/download/models/75?type=Model&format=PickleTensor&size=full&fp=fp16"
+    # perfectdeliberate_v5.safetensors https://civitai.com/models/24350/perfectdeliberate?modelVersionId=253055
+    "https://civitai.com/api/download/models/253055?type=Model&format=SafeTensor&size=full&fp=fp32"
+    # anrealspicemix_v20.safetensors 
+    "https://civitai.com/api/download/models/251594?type=Model&format=SafeTensor&size=pruned&fp=fp16"
 )
 
 LORA_MODELS=(
     #"https://civitai.com/api/download/models/16576"
+    # Ukiyo-e.safetensors https://civitai.com/models/94551/leosams-ukiyo-e-kawase-hasui-painting-style-lora?modelVersionId=100859
+    "https://civitai.com/api/download/models/100859?type=Model&format=SafeTensor"
     #NSFW POV All In One SDXL
     #good examples - https://civitai.com/images/4066339 + read comment threads
     "https://civitai.com/api/download/models/160240?type=Model&format=SafeTensor"
@@ -73,14 +79,15 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/147196?type=Model&format=SafeTensor"
     # gender slider -5 to 5 https://civitai.com/models/112988/gender-slider-lora
     "https://civitai.com/api/download/models/122023?type=Model&format=SafeTensor"
-    
+    # very_thin_pussy.v1.0.safetensors https://civitai.com/models/71707/very-thin-pussy-or-siren-lora-012?modelVersionId=76437
+    "https://civitai.com/api/download/models/76437"
     
 )
 
 VAE_MODELS=(
     #"https://huggingface.co/stabilityai/sd-vae-ft-ema-original/resolve/main/vae-ft-ema-560000-ema-pruned.safetensors"
-    #"https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors"
-    #"https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors"
+    "https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors"
+    "https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors"
 )
 
 ESRGAN_MODELS=(
