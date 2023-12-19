@@ -29,7 +29,7 @@ CHECKPOINT_MODELS=(
     # lazymixRealAmateur_v30a.safetensors https://civitai.com/models/10961?modelVersionId=106464
     "https://civitai.com/api/download/models/106464?type=Model&format=SafeTensor&size=full&fp=fp16"
     # juggernautXL_v7Rundiffusion.safetensors
-    "https://civitai.com/api/download/models/240840?type=Model&format=SafeTensor&size=full&fp=fp16"
+    # "https://civitai.com/api/download/models/240840?type=Model&format=SafeTensor&size=full&fp=fp16"
     # Epic realism pruned Natural Sin https://civitai.com/models/25694/epicrealism?modelVersionId=134065
     #"https://civitai.com/api/download/models/160989?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     # Anything V3 anythingV3_fp16.ckpt - https://civitai.com/models/66/anything-v3
@@ -37,7 +37,15 @@ CHECKPOINT_MODELS=(
     # perfectdeliberate_v5.safetensors https://civitai.com/models/24350/perfectdeliberate?modelVersionId=253055
     "https://civitai.com/api/download/models/253055?type=Model&format=SafeTensor&size=full&fp=fp32"
     # anrealspicemix_v20.safetensors 
-    "https://civitai.com/api/download/models/251594?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    # "https://civitai.com/api/download/models/251594?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    # Actual OG stable diffusion model
+    "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors?download=true"
+    # Hassaku Hentai Model https://civitai.com/models/2583/hassaku-hentai-model?modelVersionId=106922
+    "https://civitai.com/api/download/models/106922?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    # FM https://civitai.com/models/94540/fluffymarshmallow?modelVersionId=102100
+    "https://civitai.com/api/download/models/102100"
+    # CA 
+    "https://huggingface.co/Kybalico/CandyApple/resolve/main/candyApple_v10.safetensors?download=true"
 )
 
 LORA_MODELS=(
@@ -92,8 +100,9 @@ VAE_MODELS=(
 
 ESRGAN_MODELS=(
     "https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x4.pth"
-    "https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/resolve/main/4x_foolhardy_Remacri.pth"
-    "https://huggingface.co/Akumetsu971/SD_Anime_Futuristic_Armor/resolve/main/4x_NMKD-Siax_200k.pth"
+    "https://civitai.com/api/download/models/125843"
+    #"https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/resolve/main/4x_foolhardy_Remacri.pth"
+    #"https://huggingface.co/Akumetsu971/SD_Anime_Futuristic_Armor/resolve/main/4x_NMKD-Siax_200k.pth"
 )
 
 CONTROLNET_MODELS=(
@@ -147,6 +156,7 @@ function provisioning_start() {
     provisioning_get_models \
         "/opt/stable-diffusion-webui/embeddings" \
         "${EMBEDDING_MODELS[@]}"
+    mv /opt/stable-diffusion-webui/models/ESRGAN/4xUltrasharp_4xUltrasharpV10.{pt,pth}
     provisioning_print_end
 }
 
