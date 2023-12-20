@@ -14,7 +14,7 @@ EXTENSIONS=(
     "https://github.com/deforum-art/sd-webui-deforum"
     #"https://github.com/adieyal/sd-dynamic-prompts"
     "https://github.com/ototadana/sd-face-editor"
-    #"https://github.com/AlUlkesh/stable-diffusion-webui-images-browser"
+    "https://github.com/AlUlkesh/stable-diffusion-webui-images-browser"
     "https://github.com/hako-mikan/sd-webui-regional-prompter"
     "https://github.com/Coyote-A/ultimate-upscale-for-automatic1111"
     "https://github.com/fkunn1326/openpose-editor"
@@ -46,6 +46,10 @@ CHECKPOINT_MODELS=(
     "https://civitai.com/api/download/models/102100"
     # CA 
     "https://huggingface.co/Kybalico/CandyApple/resolve/main/candyApple_v10.safetensors?download=true"
+    # CalicoMix
+    "https://civitai.com/api/download/models/138124?type=Model&format=SafeTensor&size=full&fp=fp16"
+    # Dreamshaper 
+    "https://civitai.com/api/download/models/128713?type=Model&format=SafeTensor&size=pruned&fp=fp16"
 )
 
 LORA_MODELS=(
