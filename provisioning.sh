@@ -45,11 +45,13 @@ CHECKPOINT_MODELS=(
     # FM https://civitai.com/models/94540/fluffymarshmallow?modelVersionId=102100
     "https://civitai.com/api/download/models/102100"
     # CA 
-    "https://huggingface.co/Kybalico/CandyApple/resolve/main/candyApple_v10.safetensors?download=true"
+    #"https://huggingface.co/Kybalico/CandyApple/resolve/main/candyApple_v10.safetensors?download=true"
     # CalicoMix
     "https://civitai.com/api/download/models/138124?type=Model&format=SafeTensor&size=full&fp=fp16"
     # Dreamshaper 
     "https://civitai.com/api/download/models/128713?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    # https://civitai.com/models/82543/pornmaster-amateur
+    "https://civitai.com/api/download/models/176944"
 )
 
 LORA_MODELS=(
