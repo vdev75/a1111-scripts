@@ -39,19 +39,25 @@ CHECKPOINT_MODELS=(
     # anrealspicemix_v20.safetensors 
     # "https://civitai.com/api/download/models/251594?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     # Actual OG stable diffusion model
-    "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors?download=true"
+    #"https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors?download=true"
     # Hassaku Hentai Model https://civitai.com/models/2583/hassaku-hentai-model?modelVersionId=106922
     "https://civitai.com/api/download/models/106922?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     # FM https://civitai.com/models/94540/fluffymarshmallow?modelVersionId=102100
-    "https://civitai.com/api/download/models/102100"
+    #"https://civitai.com/api/download/models/102100"
     # CA 
     #"https://huggingface.co/Kybalico/CandyApple/resolve/main/candyApple_v10.safetensors?download=true"
-    # CalicoMix
-    "https://civitai.com/api/download/models/138124?type=Model&format=SafeTensor&size=full&fp=fp16"
+    # CalicoMix https://civitai.com/models/49567/calicomix
+    #"https://civitai.com/api/download/models/138124?type=Model&format=SafeTensor&size=full&fp=fp16"
+    # CalicoMixReal https://civitai.com/models/83593/calicomixreal
+    "https://civitai.com/api/download/models/93282?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     # Dreamshaper 
     "https://civitai.com/api/download/models/128713?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     # https://civitai.com/models/82543/pornmaster-amateur
-    "https://civitai.com/api/download/models/176944"
+    "https://civitai.com/api/download/models/176969?type=Model&format=SafeTensor&size=full&fp=fp32"
+    # amateur -inpainting version
+    "https://civitai.com/api/download/models/176944?type=Model&format=SafeTensor&size=full&fp=fp32"
+    # Uber realistic p merge https://civitai.com/models/2661?modelVersionId=15640
+    "https://civitai.com/api/download/models/15640"
 )
 
 LORA_MODELS=(
