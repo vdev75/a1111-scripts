@@ -12,13 +12,14 @@ EXTENSIONS=(
     "https://github.com/Mikubill/sd-webui-controlnet"
     "https://github.com/d8ahazard/sd_dreambooth_extension"
     "https://github.com/deforum-art/sd-webui-deforum"
-    #"https://github.com/adieyal/sd-dynamic-prompts"
+    "https://github.com/adieyal/sd-dynamic-prompts"
     "https://github.com/ototadana/sd-face-editor"
     "https://github.com/AlUlkesh/stable-diffusion-webui-images-browser"
     "https://github.com/hako-mikan/sd-webui-regional-prompter"
     "https://github.com/Coyote-A/ultimate-upscale-for-automatic1111"
     "https://github.com/fkunn1326/openpose-editor"
     "https://github.com/Gourieff/sd-webui-reactor"
+    "https://github.com/Bing-su/adetailer"
 )
 
 CHECKPOINT_MODELS=(
@@ -27,9 +28,11 @@ CHECKPOINT_MODELS=(
     #"https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
     #"https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
     # lazymixRealAmateur_v30a.safetensors https://civitai.com/models/10961?modelVersionId=106464
-    "https://civitai.com/api/download/models/106464?type=Model&format=SafeTensor&size=full&fp=fp16"
+    #"https://civitai.com/api/download/models/106464?type=Model&format=SafeTensor&size=full&fp=fp16"
     # juggernautXL_v7Rundiffusion.safetensors
-    # "https://civitai.com/api/download/models/240840?type=Model&format=SafeTensor&size=full&fp=fp16"
+     "https://civitai.com/api/download/models/240840?type=Model&format=SafeTensor&size=full&fp=fp16"
+    # Not-Real-Realistic-XL https://civitai.com/models/160350/not-real-realistic-xl
+    "https://civitai.com/api/download/models/180406"
     # Epic realism pruned Natural Sin https://civitai.com/models/25694/epicrealism?modelVersionId=134065
     #"https://civitai.com/api/download/models/160989?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     # Anything V3 anythingV3_fp16.ckpt - https://civitai.com/models/66/anything-v3
@@ -49,15 +52,21 @@ CHECKPOINT_MODELS=(
     # CalicoMix https://civitai.com/models/49567/calicomix
     #"https://civitai.com/api/download/models/138124?type=Model&format=SafeTensor&size=full&fp=fp16"
     # CalicoMixReal https://civitai.com/models/83593/calicomixreal
-    "https://civitai.com/api/download/models/93282?type=Model&format=SafeTensor&size=pruned&fp=fp16"
-    # Dreamshaper 
+    #"https://civitai.com/api/download/models/93282?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    # Dreamshaper - https://civitai.com/models/4384?modelVersionId=128713
     "https://civitai.com/api/download/models/128713?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    # Dreamshaper 8 inpainting
+    "https://civitai.com/api/download/models/131004?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     # https://civitai.com/models/82543/pornmaster-amateur
-    "https://civitai.com/api/download/models/176969?type=Model&format=SafeTensor&size=full&fp=fp32"
+    #"https://civitai.com/api/download/models/176969?type=Model&format=SafeTensor&size=full&fp=fp32"
     # amateur -inpainting version
     "https://civitai.com/api/download/models/176944?type=Model&format=SafeTensor&size=full&fp=fp32"
     # Uber realistic p merge https://civitai.com/models/2661?modelVersionId=15640
-    "https://civitai.com/api/download/models/15640"
+    #"https://civitai.com/api/download/models/15640"
+    # Thisisreal 5 https://civitai.com/models/93529/thisisreal
+    "https://civitai.com/api/download/models/184538"
+    # autod4 https://civitai.com/models/147488/autod4-style
+    "https://civitai.com/api/download/models/207891"
 )
 
 LORA_MODELS=(
@@ -68,21 +77,15 @@ LORA_MODELS=(
     #good examples - https://civitai.com/images/4066339 + read comment threads
     "https://civitai.com/api/download/models/160240?type=Model&format=SafeTensor"
     #POV facesitting https://civitai.com/models/37343/pov-facesitting
-    "https://civitai.com/api/download/models/43354"
-    # Hairy Pubic Hair.safetensors https://civitai.com/models/125598/hairy-unshaven-natural-pubic-hair-female
-    "https://civitai.com/api/download/models/137206?type=Model&format=SafeTensor"
-    # PeeingWoman1.2.safetensors https://civitai.com/models/24221/peeing-woman
-    "https://civitai.com/api/download/models/32121"
-    # femboiFull.safetensors https://civitai.com/models/17524/femboi-full-femboytrap-concept-lora
-    "https://civitai.com/api/download/models/20713?type=Model&format=SafeTensor&size=full&fp=fp16"
+    #"https://civitai.com/api/download/models/43354"
     # age_slider_v20.safetensors https://civitai.com/models/128417/age-slider?modelVersionId=143150
     "https://civitai.com/api/download/models/143150"
     # color_temperature_slider_v1.safetensors  https://civitai.com/models/127535/color-temperature-slider-lora?modelVersionId=139548
-    "https://civitai.com/api/download/models/139548?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/139548?type=Model&format=SafeTensor"
     #zoom_slider_v1.safetensors https://civitai.com/models/114460/zoom-slider-lora -7 to 7
     "https://civitai.com/api/download/models/123732?type=Model&format=SafeTensor"
     # skin tone slider -5 to 5 https://civitai.com/models/112594/skin-tone-slider-lora
-    "https://civitai.com/api/download/models/121575?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/121575?type=Model&format=SafeTensor"
     # Weight slider -3 to 3 https://civitai.com/models/112552/weight-slider-lora
     "https://civitai.com/api/download/models/126824?type=Model&format=SafeTensor"
     # people count slider -8 to 8 https://civitai.com/models/114104/people-count-slider-lora
@@ -92,16 +95,33 @@ LORA_MODELS=(
     # Detail Slider -5 to 5 https://civitai.com/models/153562/detail-slider-lora
     "https://civitai.com/api/download/models/171989?type=Model&format=SafeTensor"
     # hair length -8 to 8 or more https://civitai.com/models/114215/hair-length-slider-lora
-    "https://civitai.com/api/download/models/123434?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/123434?type=Model&format=SafeTensor"
     # SDXL photorealistic slider 0 to 5 https://civitai.com/models/117060/photorealistic-slider-sdxl-lora
     "https://civitai.com/api/download/models/126807?type=Model&format=SafeTensor"
     # curly hair slider -8 to 8 or more https://civitai.com/models/133700/curly-hair-slider-lora
-    "https://civitai.com/api/download/models/147196?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/147196?type=Model&format=SafeTensor"
     # gender slider -5 to 5 https://civitai.com/models/112988/gender-slider-lora
-    "https://civitai.com/api/download/models/122023?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/122023?type=Model&format=SafeTensor"
     # very_thin_pussy.v1.0.safetensors https://civitai.com/models/71707/very-thin-pussy-or-siren-lora-012?modelVersionId=76437
-    "https://civitai.com/api/download/models/76437"
-    
+    #"https://civitai.com/api/download/models/76437"
+    # MS Real Pants Down LORA - https://civitai.com/models/41340/ms-real-pants-down-lora
+    "https://civitai.com/api/download/models/46275"
+    # clothing adjuster https://civitai.com/models/88132/leosams-clothing-adjuster-lora?modelVersionId=117151
+    "https://civitai.com/api/download/models/117151?type=Model&format=SafeTensor"
+    # doubledk https://civitai.com/models/18649/doubledick?modelVersionId=22133
+    "https://civitai.com/api/download/models/22133"
+    # female masturbation https://civitai.com/models/155172/female-masturbation?modelVersionId=174016
+    "https://civitai.com/api/download/models/174016"
+    # skirt lift https://civitai.com/models/189169/skirt-lift-bottom-pov-or-goofy-ai?modelVersionId=212467
+    "https://civitai.com/api/download/models/212467"
+    #riding bbc https://civitai.com/models/70441/riding-a-bbc-cowgirl?modelVersionId=75137
+    "https://civitai.com/api/download/models/75137?type=Model&format=SafeTensor"
+    # pose fingering from behind https://civitai.com/models/83274/pose-fingering-from-behind?modelVersionId=88489
+    "https://civitai.com/api/download/models/88489"
+    # a from behind https://civitai.com/models/95395/rimjob-anilingus-from-behind?modelVersionId=101817
+    "https://civitai.com/api/download/models/101817"
+    # erpose all fours https://civitai.com/models/95579/eropose-all-fours?modelVersionId=102047
+    "https://civitai.com/api/download/models/102047?type=Model&format=SafeTensor"
 )
 
 VAE_MODELS=(
@@ -142,6 +162,12 @@ CONTROLNET_MODELS=(
 EMBEDDING_MODELS=(
     # use epiCNegative for epicrealism model https://civitai.com/models/89484/epicrealism-embeddings?modelVersionId=95263
     "https://civitai.com/api/download/models/95263?type=Model&format=Other"
+    # easy negative https://civitai.com/models/7808/easynegative?modelVersionId=9208
+    "https://civitai.com/api/download/models/9208?type=Model&format=SafeTensor&size=full&fp=fp16"
+    # better hands https://civitai.com/models/64870/better-hands-emb?modelVersionId=69507
+    "https://civitai.com/api/download/models/69507"
+    # quality embeddings https://civitai.com/models/16807/useful-quality-embeddings-animeillustdiffusion?modelVersionId=91028
+    "https://civitai.com/api/download/models/91028?type=Model&format=PickleTensor"
 )
 
 
