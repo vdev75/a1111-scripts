@@ -8,6 +8,22 @@
 
 DISK_GB_REQUIRED=100
 
+# =======================================
+# quickly install kohya
+# =======================================
+apt install python3.10-venv
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib/
+
+mkdir /workspace/kohya
+cd /workspace/kohya
+git clone https://github.com/bmaltais/kohya_ss.git
+cd kohya_ss
+chmod +x ./setup.sh
+./setup.sh
+# run kohya
+# ./gui.sh --listen 0.0.0.0 --server_port 7900 --inbrowser --share
+# =======================================
+
 EXTENSIONS=(
     "https://github.com/Mikubill/sd-webui-controlnet"
     "https://github.com/d8ahazard/sd_dreambooth_extension"
@@ -275,15 +291,3 @@ alias readlogs="less /var/log/onstart.log"
 provisioning_start
 
 
-# ----- kohya -------
-apt install python3.10-venv
-
-export LD_LIBRARY_PATH=/usr/lib/wsl/lib/
-
-mkdir /workspace/kohya
-cd /workspace/kohya
-git clone https://github.com/bmaltais/kohya_ss.git
-cd kohya_ss
-chmod +x ./setup.sh
-./setup.sh
-./gui.sh --listen 0.0.0.0 --server_port 7900 --inbrowser --share
