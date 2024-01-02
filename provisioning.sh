@@ -286,4 +286,4 @@ git clone https://github.com/bmaltais/kohya_ss.git
 cd kohya_ss
 chmod +x ./setup.sh
 ./setup.sh
-gui.sh --listen 0.0.0.0 --server_port 7860 --inbrowser --share
+./gui.sh --listen 0.0.0.0 --server_port 7900 --inbrowser --share
