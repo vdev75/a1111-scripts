@@ -6,7 +6,7 @@
 
 ### Edit the following arrays to suit your workflow
 
-DISK_GB_REQUIRED=30
+DISK_GB_REQUIRED=100
 
 EXTENSIONS=(
     "https://github.com/Mikubill/sd-webui-controlnet"
@@ -20,6 +20,8 @@ EXTENSIONS=(
     "https://github.com/fkunn1326/openpose-editor"
     "https://github.com/Gourieff/sd-webui-reactor"
     "https://github.com/Bing-su/adetailer"
+    "https://github.com/Uminosachi/sd-webui-inpaint-anything.git"
+    "https://github.com/continue-revolution/sd-webui-animatediff.git"
 )
 
 CHECKPOINT_MODELS=(
@@ -28,17 +30,19 @@ CHECKPOINT_MODELS=(
     #"https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
     #"https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
     # lazymixRealAmateur_v30a.safetensors https://civitai.com/models/10961?modelVersionId=106464
-    #"https://civitai.com/api/download/models/106464?type=Model&format=SafeTensor&size=full&fp=fp16"
-    # juggernautXL_v7Rundiffusion.safetensors
+    "https://civitai.com/api/download/models/106464?type=Model&format=SafeTensor&size=full&fp=fp16"
+    # Juggernaut https://civitai.com/models/46422?modelVersionId=274039
+    "https://civitai.com/api/download/models/274039?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    # juggernautXL_v7Rundiffusion.safetensors https://civitai.com/models/133005/juggernaut-xl
      "https://civitai.com/api/download/models/240840?type=Model&format=SafeTensor&size=full&fp=fp16"
     # Not-Real-Realistic-XL https://civitai.com/models/160350/not-real-realistic-xl
     "https://civitai.com/api/download/models/180406"
     # Epic realism pruned Natural Sin https://civitai.com/models/25694/epicrealism?modelVersionId=134065
-    #"https://civitai.com/api/download/models/160989?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    "https://civitai.com/api/download/models/160989?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     # Anything V3 anythingV3_fp16.ckpt - https://civitai.com/models/66/anything-v3
     #"https://civitai.com/api/download/models/75?type=Model&format=PickleTensor&size=full&fp=fp16"
     # perfectdeliberate_v5.safetensors https://civitai.com/models/24350/perfectdeliberate?modelVersionId=253055
-    "https://civitai.com/api/download/models/253055?type=Model&format=SafeTensor&size=full&fp=fp32"
+    #"https://civitai.com/api/download/models/253055?type=Model&format=SafeTensor&size=full&fp=fp32"
     # anrealspicemix_v20.safetensors 
     # "https://civitai.com/api/download/models/251594?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     # Actual OG stable diffusion model
@@ -56,17 +60,17 @@ CHECKPOINT_MODELS=(
     # Dreamshaper - https://civitai.com/models/4384?modelVersionId=128713
     "https://civitai.com/api/download/models/128713?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     # Dreamshaper 8 inpainting
-    "https://civitai.com/api/download/models/131004?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    #"https://civitai.com/api/download/models/131004?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     # https://civitai.com/models/82543/pornmaster-amateur
     #"https://civitai.com/api/download/models/176969?type=Model&format=SafeTensor&size=full&fp=fp32"
     # amateur -inpainting version
-    "https://civitai.com/api/download/models/176944?type=Model&format=SafeTensor&size=full&fp=fp32"
+    #"https://civitai.com/api/download/models/176944?type=Model&format=SafeTensor&size=full&fp=fp32"
     # Uber realistic p merge https://civitai.com/models/2661?modelVersionId=15640
     #"https://civitai.com/api/download/models/15640"
     # Thisisreal 5 https://civitai.com/models/93529/thisisreal
     "https://civitai.com/api/download/models/184538"
     # autod4 https://civitai.com/models/147488/autod4-style
-    "https://civitai.com/api/download/models/207891"
+    #"https://civitai.com/api/download/models/207891"
 )
 
 LORA_MODELS=(
@@ -139,24 +143,27 @@ ESRGAN_MODELS=(
 
 CONTROLNET_MODELS=(
     "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_canny-fp16.safetensors"
-    #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_depth-fp16.safetensors"
-    #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_hed-fp16.safetensors"
-    #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_mlsd-fp16.safetensors"
-    #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_normal-fp16.safetensors"
+    "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_depth-fp16.safetensors"
+    "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_hed-fp16.safetensors"
+    "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_mlsd-fp16.safetensors"
+    "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_normal-fp16.safetensors"
     "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_openpose-fp16.safetensors"
-    #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_scribble-fp16.safetensors"
-    #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_seg-fp16.safetensors"
+    "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_scribble-fp16.safetensors"
+    "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_seg-fp16.safetensors"
     "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_canny-fp16.safetensors"
-    #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_color-fp16.safetensors"
-    #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_depth-fp16.safetensors"
-    #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_keypose-fp16.safetensors"
+    "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_color-fp16.safetensors"
+    "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_depth-fp16.safetensors"
+    "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_keypose-fp16.safetensors"
     "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_openpose-fp16.safetensors"
-    #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_seg-fp16.safetensors"
-    #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_sketch-fp16.safetensors"
-    #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_style-fp16.safetensors"
+    "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_seg-fp16.safetensors"
+    "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_sketch-fp16.safetensors"
+    "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_style-fp16.safetensors"
     # Control net for tiled upscaling https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main
     "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1e_sd15_tile.pth?download=true"
     "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1e_sd15_tile.yaml?download=true"
+    # Controlnet inpainting
+    "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_inpaint.pth?download=true"
+    "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_inpaint.yaml?download=true"
 )
 
 EMBEDDING_MODELS=(
@@ -260,4 +267,23 @@ function provisioning_download() {
     wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
 }
 
+# Other setup
+# ------ aliases -------
+alias dl="wget --content-disposition"
+alias readlogs="less /var/log/onstart.log"
+
 provisioning_start
+
+
+# ----- kohya -------
+apt install python3.10-venv
+
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib/
+
+mkdir /workspace/kohya
+cd /workspace/kohya
+git clone https://github.com/bmaltais/kohya_ss.git
+cd kohya_ss
+chmod +x ./setup.sh
+./setup.sh
+gui.sh --listen 0.0.0.0 --server_port 7860 --inbrowser --share
