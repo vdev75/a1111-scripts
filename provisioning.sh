@@ -38,6 +38,8 @@ EXTENSIONS=(
     "https://github.com/Bing-su/adetailer"
     "https://github.com/Uminosachi/sd-webui-inpaint-anything.git"
     "https://github.com/continue-revolution/sd-webui-animatediff.git"
+    "https://github.com/alemelis/sd-webui-ar"
+    "https://github.com/ahgsql/StyleSelectorXL"
 )
 
 CHECKPOINT_MODELS=(
@@ -50,9 +52,13 @@ CHECKPOINT_MODELS=(
     # Juggernaut https://civitai.com/models/46422?modelVersionId=274039
     "https://civitai.com/api/download/models/274039?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     # juggernautXL_v7Rundiffusion.safetensors https://civitai.com/models/133005/juggernaut-xl
-     "https://civitai.com/api/download/models/240840?type=Model&format=SafeTensor&size=full&fp=fp16"
+    "https://civitai.com/api/download/models/240840?type=Model&format=SafeTensor&size=full&fp=fp16"
+    # epic photogasm https://civitai.com/models/132632?modelVersionId=223670
+    "https://civitai.com/api/download/models/223670?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    # epic photogasm - inpainting Z
+    "https://civitai.com/api/download/models/201346?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     # Not-Real-Realistic-XL https://civitai.com/models/160350/not-real-realistic-xl
-    "https://civitai.com/api/download/models/180406"
+    #"https://civitai.com/api/download/models/180406"
     # Epic realism pruned Natural Sin https://civitai.com/models/25694/epicrealism?modelVersionId=134065
     "https://civitai.com/api/download/models/160989?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     # Anything V3 anythingV3_fp16.ckpt - https://civitai.com/models/66/anything-v3
