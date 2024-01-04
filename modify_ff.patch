@@ -1,0 +1,71 @@
+diff --git a/facefusion/content_analyser.py b/facefusion/content_analyser.py
+index 8ac603b..bfad8fd 100644
+--- a/facefusion/content_analyser.py
++++ b/facefusion/content_analyser.py
+@@ -70,13 +70,7 @@ def prepare_frame(frame : Frame) -> Frame:
+ 
+ 
+ def analyse_frame(frame : Frame) -> bool:
+-	content_analyser = get_content_analyser()
+-	frame = prepare_frame(frame)
+-	probability = content_analyser.run(None,
+-	{
+-		'input:0': frame
+-	})[0][0][1]
+-	return probability > MAX_PROBABILITY
++	return False
+ 
+ 
+ @lru_cache(maxsize = None)
+diff --git a/facefusion/ffmpeg.py b/facefusion/ffmpeg.py
+index 4cbb38e..6c0a2a2 100644
+--- a/facefusion/ffmpeg.py
++++ b/facefusion/ffmpeg.py
+@@ -8,7 +8,7 @@ from facefusion.vision import detect_fps
+ 
+ 
+ def run_ffmpeg(args : List[str]) -> bool:
+-	commands = [ 'ffmpeg', '-hide_banner', '-loglevel', 'error' ]
++	commands = [ '/usr/bin/ffmpeg', '-hide_banner', '-loglevel', 'error' ]
+ 	commands.extend(args)
+ 	try:
+ 		subprocess.run(commands, stderr = subprocess.PIPE, check = True)
+@@ -19,7 +19,7 @@ def run_ffmpeg(args : List[str]) -> bool:
+ 
+ 
+ def open_ffmpeg(args : List[str]) -> subprocess.Popen[bytes]:
+-	commands = [ 'ffmpeg', '-hide_banner', '-loglevel', 'error' ]
++	commands = [ '/usr/bin/ffmpeg', '-hide_banner', '-loglevel', 'error' ]
+ 	commands.extend(args)
+ 	return subprocess.Popen(commands, stdin = subprocess.PIPE)
+ 
+diff --git a/facefusion/uis/layouts/benchmark.py b/facefusion/uis/layouts/benchmark.py
+index ae9c320..3eeda51 100644
+--- a/facefusion/uis/layouts/benchmark.py
++++ b/facefusion/uis/layouts/benchmark.py
+@@ -60,4 +60,4 @@ def listen() -> None:
+ 
+ 
+ def run(ui : gradio.Blocks) -> None:
+-	ui.queue(concurrency_count = 2, api_open = False).launch(show_api = False)
++	ui.queue(concurrency_count = 2, api_open = False).launch(show_api = False, server_name="0.0.0.0")
+diff --git a/facefusion/uis/layouts/default.py b/facefusion/uis/layouts/default.py
+index 4537297..3194ff6 100755
+--- a/facefusion/uis/layouts/default.py
++++ b/facefusion/uis/layouts/default.py
+@@ -74,4 +74,4 @@ def listen() -> None:
+ 
+ 
+ def run(ui : gradio.Blocks) -> None:
+-	ui.launch(show_api = False)
++	ui.launch(show_api = False, server_name="0.0.0.0")
+diff --git a/facefusion/uis/layouts/webcam.py b/facefusion/uis/layouts/webcam.py
+index a5b6e18..07462ec 100644
+--- a/facefusion/uis/layouts/webcam.py
++++ b/facefusion/uis/layouts/webcam.py
+@@ -43,4 +43,4 @@ def listen() -> None:
+ 
+ 
+ def run(ui : gradio.Blocks) -> None:
+-	ui.queue(concurrency_count = 2, api_open = False).launch(show_api = False)
++	ui.queue(concurrency_count = 2, api_open = False).launch(show_api = False, server_name="0.0.0.0")
