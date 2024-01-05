@@ -25,6 +25,13 @@ chmod +x ./setup.sh
 # ./gui.sh --listen 0.0.0.0 --server_port 7900 --inbrowser --share
 # =======================================
 
+mkdir /workspace/tmp
+cd /workspace/tmp
+wget --content-disposition https://raw.githubusercontent.com/vdev75/a1111-scripts/main/config.json
+wget --content-disposition https://raw.githubusercontent.com/vdev75/a1111-scripts/main/ui-config.json
+mv * /workspace/stable-diffusion-webui/
+rm -rf /workspace/tmp
+
 EXTENSIONS=(
     "https://github.com/Mikubill/sd-webui-controlnet"
     "https://github.com/d8ahazard/sd_dreambooth_extension"
@@ -187,6 +194,12 @@ CONTROLNET_MODELS=(
     # Controlnet inpainting
     "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_inpaint.pth?download=true"
     "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_inpaint.yaml?download=true"
+    # IP Models
+    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-full-face_sd15.safetensors?download=true"
+    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus-face_sd15.safetensors?download=true"
+    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors?download=true"
+    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors?download=true"
+    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_light.safetensors?download=true"
 )
 
 EMBEDDING_MODELS=(
