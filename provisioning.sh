@@ -78,6 +78,8 @@ CHECKPOINT_MODELS=(
     "https://civitai.com/api/download/models/184538"
     # autod4 https://civitai.com/models/147488/autod4-style
     #"https://civitai.com/api/download/models/207891"
+    # SDXL Base Model
+    "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
 )
 
 LORA_MODELS=(
