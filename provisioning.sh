@@ -3,6 +3,7 @@
 # Namespace functions with provisioning_
 
 # https://raw.githubusercontent.com/ai-dock/stable-diffusion-webui/main/config/provisioning/default.sh
+# mine is available from https://raw.githubusercontent.com/vdev75/a1111-scripts/main/provisioning.sh
 
 ### Edit the following arrays to suit your workflow
 
