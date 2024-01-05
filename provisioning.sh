@@ -25,13 +25,6 @@ chmod +x ./setup.sh
 # ./gui.sh --listen 0.0.0.0 --server_port 7900 --inbrowser --share
 # =======================================
 
-mkdir /workspace/tmp
-cd /workspace/tmp
-wget --content-disposition https://raw.githubusercontent.com/vdev75/a1111-scripts/main/config.json
-wget --content-disposition https://raw.githubusercontent.com/vdev75/a1111-scripts/main/ui-config.json
-mv * /workspace/stable-diffusion-webui/
-rm -rf /workspace/tmp
-
 EXTENSIONS=(
     "https://github.com/Mikubill/sd-webui-controlnet"
     "https://github.com/d8ahazard/sd_dreambooth_extension"
@@ -241,6 +234,7 @@ function provisioning_start() {
         "/opt/stable-diffusion-webui/embeddings" \
         "${EMBEDDING_MODELS[@]}"
     mv /opt/stable-diffusion-webui/models/ESRGAN/4xUltrasharp_4xUltrasharpV10.{pt,pth}
+    update_configs
     provisioning_print_end
 }
 
@@ -296,6 +290,15 @@ function provisioning_print_header() {
 
 function provisioning_print_end() {
     printf "\nProvisioning complete:  Web UI will start now\n\n"
+}
+
+function update_configs() {
+    mkdir /workspace/tmp
+    cd /workspace/tmp
+    wget --content-disposition https://raw.githubusercontent.com/vdev75/a1111-scripts/main/config.json
+    wget --content-disposition https://raw.githubusercontent.com/vdev75/a1111-scripts/main/ui-config.json
+    mv * /workspace/stable-diffusion-webui/
+    rm -rf /workspace/tmp
 }
 
 # Download from $1 URL to $2 file path
