@@ -33,7 +33,7 @@ CHECKPOINT_MODELS=(
     #"https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
     #"https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
     # lazymixRealAmateur_v30a.safetensors https://civitai.com/models/10961?modelVersionId=106464
-    "https://civitai.com/api/download/models/106464?type=Model&format=SafeTensor&size=full&fp=fp16"
+    #"https://civitai.com/api/download/models/106464?type=Model&format=SafeTensor&size=full&fp=fp16"
     # Juggernaut https://civitai.com/models/46422?modelVersionId=274039
     "https://civitai.com/api/download/models/274039?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     # juggernautXL_v7Rundiffusion.safetensors https://civitai.com/models/133005/juggernaut-xl
@@ -79,7 +79,7 @@ CHECKPOINT_MODELS=(
     # autod4 https://civitai.com/models/147488/autod4-style
     #"https://civitai.com/api/download/models/207891"
     # SDXL Base Model
-    "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
+    #"https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
 )
 
 LORA_MODELS=(
@@ -88,11 +88,11 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/100859?type=Model&format=SafeTensor"
     #NSFW POV All In One SDXL
     #good examples - https://civitai.com/images/4066339 + read comment threads
-    "https://civitai.com/api/download/models/160240?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/160240?type=Model&format=SafeTensor"
     #POV facesitting https://civitai.com/models/37343/pov-facesitting
     #"https://civitai.com/api/download/models/43354"
     # age_slider_v20.safetensors https://civitai.com/models/128417/age-slider?modelVersionId=143150
-    "https://civitai.com/api/download/models/143150"
+    #"https://civitai.com/api/download/models/143150"
     # color_temperature_slider_v1.safetensors  https://civitai.com/models/127535/color-temperature-slider-lora?modelVersionId=139548
     #"https://civitai.com/api/download/models/139548?type=Model&format=SafeTensor"
     #zoom_slider_v1.safetensors https://civitai.com/models/114460/zoom-slider-lora -7 to 7
@@ -100,9 +100,9 @@ LORA_MODELS=(
     # skin tone slider -5 to 5 https://civitai.com/models/112594/skin-tone-slider-lora
     #"https://civitai.com/api/download/models/121575?type=Model&format=SafeTensor"
     # Weight slider -3 to 3 https://civitai.com/models/112552/weight-slider-lora
-    "https://civitai.com/api/download/models/126824?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/126824?type=Model&format=SafeTensor"
     # people count slider -8 to 8 https://civitai.com/models/114104/people-count-slider-lora
-    "https://civitai.com/api/download/models/123309?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/123309?type=Model&format=SafeTensor"
     # muscle slider -3 to 5 https://civitai.com/models/112658/muscle-slider-lora
     "https://civitai.com/api/download/models/121658?type=Model&format=SafeTensor"
     # Detail Slider -5 to 5 https://civitai.com/models/153562/detail-slider-lora
@@ -127,14 +127,14 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/174016"
     # skirt lift https://civitai.com/models/189169/skirt-lift-bottom-pov-or-goofy-ai?modelVersionId=212467
     "https://civitai.com/api/download/models/212467"
-    #riding bbc https://civitai.com/models/70441/riding-a-bbc-cowgirl?modelVersionId=75137
-    "https://civitai.com/api/download/models/75137?type=Model&format=SafeTensor"
     # pose fingering from behind https://civitai.com/models/83274/pose-fingering-from-behind?modelVersionId=88489
     "https://civitai.com/api/download/models/88489"
     # a from behind https://civitai.com/models/95395/rimjob-anilingus-from-behind?modelVersionId=101817
     "https://civitai.com/api/download/models/101817"
     # erpose all fours https://civitai.com/models/95579/eropose-all-fours?modelVersionId=102047
     "https://civitai.com/api/download/models/102047?type=Model&format=SafeTensor"
+    # realistic vision
+    "https://civitai.com/api/download/models/245598?type=Model&format=SafeTensor&size=full&fp=fp16"
 )
 
 VAE_MODELS=(
